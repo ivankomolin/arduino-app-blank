@@ -16,7 +16,7 @@ install:index
 	bash -c "${CONTAINER} arduino-cli core install ${CORE}"
 
 #Upload sketch on the device
-upload:
+upload:compile
 	bash -c "${CONTAINER} arduino-cli upload -p ${DEVICE} --fqbn ${FQBN}"
 
 #Compile sketch for arduino nano device

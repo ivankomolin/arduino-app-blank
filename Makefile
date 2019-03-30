@@ -1,13 +1,12 @@
 include .env
 export
 
-
 .PHONY: *
 
 #Command-for running container
 CONTAINER = docker run --rm \
 	-v ${PWD}/app:/app \
-	-v ${PWD}/arduino:/root/.arduino15/ \
+	-v ${HOME}/.arduino15:/root/.arduino15 \
 	--device=${DEVICE} \
 		ivankomolin/arduino
 

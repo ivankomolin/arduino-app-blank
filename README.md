@@ -16,7 +16,7 @@ A step by step series of examples that tell you how to get a development env run
 
 Clone repository
 ```
-$ git clone git@github.com:ivankomolin/docker-arduino-app-blank.git ./
+$ git clone git@github.com:ivankomolin/arduino-app-blank.git ./
 ```
 
 Change enviroments file .env and install requirements
